@@ -1,5 +1,5 @@
-#Below code is for business/SSO login purpose where gmail is used and generally email password is not required, 
-#incase of it require, its must to add the line for that as well
+#Below code is for business/SSO login purpose in the organizations where gmail is used and generally email password is not required, 
+#incase if its required, a small modification is required to this code.
 
 from selenium import webdriver 
 import time
