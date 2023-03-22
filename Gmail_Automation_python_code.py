@@ -2,7 +2,9 @@
 #incase if its required, a small modification is required to this code.
 
 from selenium import webdriver 
+from selenium.webdriver.common.keys import Keys
 import time
+import os
 #from selenium.webdriver.common.action_chains import ActionChains
 
 
@@ -33,7 +35,7 @@ time.sleep(10)
 driver.find_element_by_xpath('//*[@id=":ki"]/div/div').click()
 time.sleep(15)
 
-from selenium.webdriver.common.keys import Keys
+
 # Give list of recipients
 emails = ["user_1@gmail.com",",", "user_2@gmail.com"]
 #split funtion will convert string into list split wrt “,”
@@ -52,7 +54,7 @@ subjElem = driver.find_element_by_name("subjectbox")
 subjElem.send_keys('Automated Email Testing') #Email Subject
 
 time.sleep(7)
-import os
+
 os.chdir(r"C:\Users\User_Name\Documents\Test") #Replace your username here with user_name
 with open("Exceptions.txt", 'r', encoding='UTF-8') as f:
     text = f.read()
